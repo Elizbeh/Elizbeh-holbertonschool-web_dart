@@ -1,6 +1,9 @@
 void outer(String name, String id) {
-  print('Hello agent ${inner()}.$name your id is $id');
-}
-String inner() {
-    return 'B';
+  String inner() {
+    List<String> formedName = name.split(' ');
+    String initial = formedName[1][0];
+    String otherName = formedName[0];
+    return 'Hello Agent $initial.$otherName your id is $id';
+  }
+  print(inner());
 }
