@@ -1,4 +1,3 @@
 void main() {
-  String greet = 'Hello Holberton!\n';
-  print(greet);
+ print('Hello Holberton!\n');
 }
