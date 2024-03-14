@@ -1,4 +1,4 @@
 void main() {
-  String greet = 'Hello Holberton!';
-  print('$greet \n');
+  String greet = 'Hello Holberton!\n';
+  print(greet);
 }
