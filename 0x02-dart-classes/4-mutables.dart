@@ -3,7 +3,7 @@ class Password {
 
   Password({required String password}) : _password = password;
 
-    bool isValid() {
+  bool isValid() {
     if (_password.length < 8 || _password.length > 16) return false;
 
     if (!RegExp(r'[A-Z]').hasMatch(_password)) return false;
@@ -13,16 +13,14 @@ class Password {
     return true;
   }
 
-  String get password{
-    return _password;
-  }
-
-   
-  String toString() {
-    return 'Your password is $_password';
-  }
+  String get password => _password;
 
   set password(String value) {
     _password = value;
+  }
+
+  @override
+  String toString() {
+    return 'Password $_password';
   }
 }
