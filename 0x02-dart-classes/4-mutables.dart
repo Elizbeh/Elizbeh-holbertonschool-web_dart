@@ -17,12 +17,12 @@ class Password {
     return _password;
   }
 
-  set password(String value) {
-    _password = value;
+   
+  String toString() {
+    return 'Your password is $_password';
   }
 
-  @override 
-  String toString() {
-    return 'Password $_password';
+  set password(String value) {
+    _password = value;
   }
 }
