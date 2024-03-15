@@ -3,7 +3,7 @@ class User {
   int age;
   double height;
 
-  User({this.name, this.age, this.height});
+  User({required this.name, required this.age, required this.height});
 
   Map<String, dynamic> toJson() {
     return {
