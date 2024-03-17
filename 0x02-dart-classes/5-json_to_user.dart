@@ -11,7 +11,7 @@ class User {
       'id': id,
       'name': name,
       'age': age,
-      'height': height,
+      'height': height
     };
   }
 
@@ -20,12 +20,12 @@ class User {
       id: userJson['id'],
       name: userJson['name'],
       age: userJson['age'],
-      height: userJson['height'],
+      height: userJson['height']
     );
   }
 
   @override
   String toString() {
-    return 'User(id : $id ,name: $name,  age: $age, height: $height)';
+    return 'User(id : $id ,name: $name, age: $age, height: $height)';
   }
 }
