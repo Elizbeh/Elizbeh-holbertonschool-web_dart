@@ -8,9 +8,13 @@ class Password {
     return false;
   }
   
-  final pattern = RegExp(r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])');
-  return pattern.hasMatch(_password);
-}
+  final hasUppercase = RegExp(r'[A-Z]').hasMatch(_password);
+  final hasLowercase = RegExp(r'[a-z]').hasMatch(_password);
+  final hasNumber = RegExp(r'[0-9]').hasMatch(_password);
+
+    return hasUppercase && hasLowercase && hasNumber;
+  }
+
 
    String toString() {
         return (
