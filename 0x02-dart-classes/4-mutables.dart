@@ -12,15 +12,15 @@ class Password {
   return pattern.hasMatch(_password);
 }
 
+   String toString() {
+        return (
+            'Password ${_password}'
+        );
+    }
 
   String get password => _password;
 
   set password(String value) {
     _password = value;
-  }
-
-  @override
-  String toString() {
-    return 'Password $_password';
   }
 }
