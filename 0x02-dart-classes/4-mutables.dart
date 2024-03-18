@@ -25,5 +25,4 @@ class Password {
     set password(String newPassword) {
     _password = newPassword;
   }
-
 }
