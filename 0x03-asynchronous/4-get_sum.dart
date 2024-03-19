@@ -14,7 +14,7 @@ Future<double> calculateTotal() async{
     for (var product in userOrders) {
       var productPriceJson = await fetchProductPrice(product);
       var productPrice = json.decode(productPriceJson);
-      totalPrice += double.parse(productPrice.toString());
+      totalPrice += productPrice;
     }
     return totalPrice;
   } catch (error) {
