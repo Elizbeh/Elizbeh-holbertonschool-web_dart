@@ -9,8 +9,8 @@ Future<void> printRmCharacters() async {
     if (response.statusCode == 200) {
       var data = json.decode(response.body);
       var characters = data['results'];
-      var first17Characters = characters.sublist(0, 17);
-      for (var character in first17Characters) {
+      //var first17Characters = characters.sublist(0, 17);
+      for (var character in characters) {
         print(character['name']);
       }
     } else {
