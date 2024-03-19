@@ -10,7 +10,6 @@ Future<double> calculateTotal() async{
     // fetch user orders
     var userOrdersJson = await fetchUserOrders(userId);
     var userOrders = json.decode(userOrdersJson);
-
     double totalPrice = 0;
     for (var product in userOrders) {
       var productPriceJson = await fetchProductPrice(product);
