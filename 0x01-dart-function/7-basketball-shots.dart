@@ -14,7 +14,7 @@ int whoWins(Map<String, int> teamA, Map<String, int> teamB) {
   //determine the winner
   if (pointA > pointB) 
     return 1;
-  if (pointA < pointB)
+  else if (pointA < pointB)
     return 2;
   else return 0;
 }
